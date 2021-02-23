@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  max-width: 768px;  
+  width: 100%;
+  position: relative;
+  color: #2c3e50;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.1);
+  
+  .App__CC {
+    transform: translate(-50px, 0px);
+  }
+
+  .App__sidebar {
+    margin-left: -20px;
+    pre {
+      font-family: monospace;
+      background: #efefef;
+      padding: 0.6rem;
+      color: #555555;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 0.7rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .App__body {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    padding: 1rem;
+  }
+
+  .App__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #efefef;
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    button {
+      border: 0;
+      outline: 0;
+      background-color: white;
+      font-size: 0.825rem;
+      padding: 1rem;
+      display: block;
+      color: #2c3e50;
+      cursor: pointer;
+
+      &:hover {
+        color: salmon
+      }
+    }
+  }
+}
